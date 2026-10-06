@@ -1,0 +1,294 @@
+{
+  "source": "https://checksum.ai/docs/llms.txt",
+  "captured_at": "2026-08-25",
+  "page_count": 41,
+  "pages": {
+    "https://checksum.ai/docs/overview/index.md": {
+      "title": "Checksum AI — E2E Testing Platform",
+      "url": "https://checksum.ai/docs/overview/index.md",
+      "page_url": "https://checksum.ai/docs/overview",
+      "area": "overview",
+      "description": "Checksum is a continuous quality platform that runs alongside CI/CD: testing, healing, and validating automatically so teams can ship more code without trading speed for reliability."
+    },
+    "https://checksum.ai/docs/getting-started/index.md": {
+      "title": "Getting Started",
+      "url": "https://checksum.ai/docs/getting-started/index.md",
+      "page_url": "https://checksum.ai/docs/getting-started",
+      "area": "getting-started",
+      "description": "When you create a new project in Checksum, you'll be guided through a setup wizard with three steps. Each step can be completed in any order, and you can skip steps to come back later."
+    },
+    "https://checksum.ai/docs/getting-started/environment-configuration.md": {
+      "title": "Environment Configuration",
+      "url": "https://checksum.ai/docs/getting-started/environment-configuration.md",
+      "page_url": "https://checksum.ai/docs/getting-started/environment-configuration",
+      "area": "getting-started",
+      "description": "Checksum supports multiple testing environments, each with its own environment URL, credentials, and configuration. This allows you to test against staging, production, or any other environment."
+    },
+    "https://checksum.ai/docs/repo-and-cli-setup/index.md": {
+      "title": "Repository and CLI Setup",
+      "url": "https://checksum.ai/docs/repo-and-cli-setup/index.md",
+      "page_url": "https://checksum.ai/docs/repo-and-cli-setup",
+      "area": "repo-and-cli-setup",
+      "description": "Before using Checksum, you need to set up your test repository and connect it to Checksum. This guide walks you through creating or configuring a repository for your Playwright tests, installing the Checksum CLI, and verifying that everything works."
+    },
+    "https://checksum.ai/docs/repo-and-cli-setup/git-integration.md": {
+      "title": "Git Integration",
+      "url": "https://checksum.ai/docs/repo-and-cli-setup/git-integration.md",
+      "page_url": "https://checksum.ai/docs/repo-and-cli-setup/git-integration",
+      "area": "repo-and-cli-setup",
+      "description": "Checksum connects to your Git provider to read your codebase and deliver tests as pull requests. You can connect via GitHub (GitHub App) or GitLab (access token)."
+    },
+    "https://checksum.ai/docs/repo-and-cli-setup/github-enterprise.md": {
+      "title": "GitHub Enterprise (ghe.com)",
+      "url": "https://checksum.ai/docs/repo-and-cli-setup/github-enterprise.md",
+      "page_url": "https://checksum.ai/docs/repo-and-cli-setup/github-enterprise",
+      "area": "repo-and-cli-setup",
+      "description": "Connect Checksum to a GitHub Enterprise Cloud (*.ghe.com) instance with a self-serve, one-time setup from the Checksum web app."
+    },
+    "https://checksum.ai/docs/repo-mirror/index.md": {
+      "title": "Repo Mirror",
+      "url": "https://checksum.ai/docs/repo-mirror/index.md",
+      "page_url": "https://checksum.ai/docs/repo-mirror",
+      "area": "repo-mirror",
+      "description": "The repo mirror is the core concept behind how Checksum interacts with your repository. Checksum maintains a synchronized view of your test repository — reading your existing tests and codebase, and writing back by opening pull requests."
+    },
+    "https://checksum.ai/docs/detect-tests/index.md": {
+      "title": "Detect Tests",
+      "url": "https://checksum.ai/docs/detect-tests/index.md",
+      "page_url": "https://checksum.ai/docs/detect-tests",
+      "area": "detect-tests",
+      "description": "Test detection is the first step in the Checksum workflow. Instead of manually writing test specifications, Checksum's AI agent analyzes your application and automatically identifies the most important user flows to test."
+    },
+    "https://checksum.ai/docs/generate-tests/index.md": {
+      "title": "Generate Tests",
+      "url": "https://checksum.ai/docs/generate-tests/index.md",
+      "page_url": "https://checksum.ai/docs/generate-tests",
+      "area": "generate-tests",
+      "description": "Test generation is the core of Checksum — an AI agent autonomously creates production-ready Playwright E2E tests from your test flow definitions. The agent plans, implements, reviews its own work, and verifies the tests actually pass before delivering them as a pull request."
+    },
+    "https://checksum.ai/docs/generate-tests/deep-vs-standard.md": {
+      "title": "Deep vs Standard Modes",
+      "url": "https://checksum.ai/docs/generate-tests/deep-vs-standard.md",
+      "page_url": "https://checksum.ai/docs/generate-tests/deep-vs-standard",
+      "area": "generate-tests",
+      "description": "Every Checksum pipeline — detection, generation, and healing — supports two modes: Standard and Deep. The mode determines how thorough the AI agent's process is."
+    },
+    "https://checksum.ai/docs/generate-tests/story-and-test-format.md": {
+      "title": "Story and Test Format",
+      "url": "https://checksum.ai/docs/generate-tests/story-and-test-format.md",
+      "page_url": "https://checksum.ai/docs/generate-tests/story-and-test-format",
+      "area": "generate-tests",
+      "description": "Checksum generates two files for each test: a story file (.checksum.md) that describes the test in human-readable format, and a test file (.checksum.spec.ts) that contains the actual Playwright code."
+    },
+    "https://checksum.ai/docs/agent-sessions/index.md": {
+      "title": "Agent Sessions",
+      "url": "https://checksum.ai/docs/agent-sessions/index.md",
+      "page_url": "https://checksum.ai/docs/agent-sessions",
+      "area": "agent-sessions",
+      "description": "When you trigger detection, generation, or healing, Checksum creates an agent session — a running instance of the AI agent working on your tests. Sessions run autonomously but allow you to interact when the agent needs your input."
+    },
+    "https://checksum.ai/docs/checksum-cli/index.md": {
+      "title": "Checksum CLI",
+      "url": "https://checksum.ai/docs/checksum-cli/index.md",
+      "page_url": "https://checksum.ai/docs/checksum-cli",
+      "area": "checksum-cli",
+      "description": "The Checksum CLI (checksumai) is the command-line tool for running your generated Playwright tests. It handles environment setup, test execution, result uploading, and integrates with the Checksum dashboard for reporting."
+    },
+    "https://checksum.ai/docs/checksum-cli/cli-reference.md": {
+      "title": "CLI Reference",
+      "url": "https://checksum.ai/docs/checksum-cli/cli-reference.md",
+      "page_url": "https://checksum.ai/docs/checksum-cli/cli-reference",
+      "area": "checksum-cli",
+      "description": "The Checksum CLI (checksumai) is installed as part of the @checksum-ai/runtime npm package. All commands are run via npx checksumai."
+    },
+    "https://checksum.ai/docs/checksum-cli/ci-integration.md": {
+      "title": "CI Integration",
+      "url": "https://checksum.ai/docs/checksum-cli/ci-integration.md",
+      "page_url": "https://checksum.ai/docs/checksum-cli/ci-integration",
+      "area": "checksum-cli",
+      "description": "Run your Checksum tests automatically in your CI pipeline. This guide covers setup for GitHub Actions and GitLab CI/CD."
+    },
+    "https://checksum.ai/docs/checksum-cli/sharding-pitfalls.md": {
+      "title": "Sharding Pitfalls",
+      "url": "https://checksum.ai/docs/checksum-cli/sharding-pitfalls.md",
+      "page_url": "https://checksum.ai/docs/checksum-cli/sharding-pitfalls",
+      "area": "checksum-cli",
+      "description": "What to check in your suite before turning on sharding, and the current limits."
+    },
+    "https://checksum.ai/docs/checksum-cli/reports-and-traces.md": {
+      "title": "Reports and Traces",
+      "url": "https://checksum.ai/docs/checksum-cli/reports-and-traces.md",
+      "page_url": "https://checksum.ai/docs/checksum-cli/reports-and-traces",
+      "area": "checksum-cli",
+      "description": "Every test run executed through the Checksum CLI uploads results to the dashboard. You can view detailed reports, debug failures with the trace viewer, and track test health over time."
+    },
+    "https://checksum.ai/docs/auto-maintenance/index.md": {
+      "title": "Auto-Maintenance",
+      "url": "https://checksum.ai/docs/auto-maintenance/index.md",
+      "page_url": "https://checksum.ai/docs/auto-maintenance",
+      "area": "auto-maintenance",
+      "description": "Tests break. Apps evolve, selectors change, flows get redesigned. Maintaining a large E2E test suite is traditionally one of the biggest pain points in testing."
+    },
+    "https://checksum.ai/docs/auto-maintenance/auto-recovery.md": {
+      "title": "Auto-Recovery",
+      "url": "https://checksum.ai/docs/auto-maintenance/auto-recovery.md",
+      "page_url": "https://checksum.ai/docs/auto-maintenance/auto-recovery",
+      "area": "auto-maintenance",
+      "description": "Auto-recovery is Checksum's real-time test maintenance system. When a test step fails during execution, the CLI's AI fallback immediately attempts to recover — finding the right element, adjusting timing, or adapting to UI changes on the fly."
+    },
+    "https://checksum.ai/docs/auto-maintenance/auto-healing.md": {
+      "title": "Auto-Healing",
+      "url": "https://checksum.ai/docs/auto-maintenance/auto-healing.md",
+      "page_url": "https://checksum.ai/docs/auto-maintenance/auto-healing",
+      "area": "auto-maintenance",
+      "description": "Auto-healing is Checksum's batch repair system for tests that fail in CI and can't be fixed by auto-recovery alone. When tests need code-level changes, Checksum creates an AI agent session that analyzes the failures, fixes the test code, and opens a PR with the healed tests."
+    },
+    "https://checksum.ai/docs/feature-health-dashboard/index.md": {
+      "title": "Feature Health Dashboard",
+      "url": "https://checksum.ai/docs/feature-health-dashboard/index.md",
+      "page_url": "https://checksum.ai/docs/feature-health-dashboard",
+      "area": "feature-health-dashboard",
+      "description": "Track suite health, triage bugs as grouped entities, collaborate with comments, and get notified when test health changes."
+    },
+    "https://checksum.ai/docs/coding-agent-integration/index.md": {
+      "title": "Coding Agent Integration",
+      "url": "https://checksum.ai/docs/coding-agent-integration/index.md",
+      "page_url": "https://checksum.ai/docs/coding-agent-integration",
+      "area": "coding-agent-integration",
+      "description": "Checksum integrates directly with AI coding agents like Claude Code, Cursor, and other tools via slash commands. Instead of using the cloud-based web app, developers can run /checksum commands in their IDE to detect, generate, and heal tests locally."
+    },
+    "https://checksum.ai/docs/mcp-server/index.md": {
+      "title": "MCP Server",
+      "url": "https://checksum.ai/docs/mcp-server/index.md",
+      "page_url": "https://checksum.ai/docs/mcp-server",
+      "area": "mcp-server",
+      "description": "Connect Claude Code, Cursor, VS Code, or any MCP client to Checksum. Ask your agent to generate tests, heal failures, and pull reports — without leaving your editor."
+    },
+    "https://checksum.ai/docs/periodic-runs/index.md": {
+      "title": "Periodic Runs",
+      "url": "https://checksum.ai/docs/periodic-runs/index.md",
+      "page_url": "https://checksum.ai/docs/periodic-runs",
+      "area": "periodic-runs",
+      "description": "Periodic runs allow you to schedule recurring test executions on a cron-based frequency."
+    },
+    "https://checksum.ai/docs/integrations/index.md": {
+      "title": "Integrations",
+      "url": "https://checksum.ai/docs/integrations/index.md",
+      "page_url": "https://checksum.ai/docs/integrations",
+      "area": "integrations",
+      "description": "Route Checksum events — health reports, bug status changes, auto-heal updates, run completions — to your team's chat tools. Slack, Microsoft Teams, Discord, and Google Chat are supported."
+    },
+    "https://checksum.ai/docs/integrations/slack-bot.md": {
+      "title": "Slack @checksum Bot",
+      "url": "https://checksum.ai/docs/integrations/slack-bot.md",
+      "page_url": "https://checksum.ai/docs/integrations/slack-bot",
+      "area": "integrations",
+      "description": "Install the Checksum Slack app and mention @checksum in a channel to start test generation from Slack threads."
+    },
+    "https://checksum.ai/docs/sso/microsoft-entra-sso.md": {
+      "title": "Microsoft Entra ID SSO",
+      "url": "https://checksum.ai/docs/sso/microsoft-entra-sso.md",
+      "page_url": "https://checksum.ai/docs/sso/microsoft-entra-sso",
+      "area": "sso",
+      "description": "OAuth 2.0 / OpenID Connect setup guide for approving Checksum in your Microsoft Entra ID (Azure AD) tenant. Written for IT and security administrators."
+    },
+    "https://checksum.ai/docs/api-testing/index.md": {
+      "title": "API Testing",
+      "url": "https://checksum.ai/docs/api-testing/index.md",
+      "page_url": "https://checksum.ai/docs/api-testing",
+      "area": "api-testing",
+      "description": "Checksum's API Agent is a continuous testing agent for your backend. Point it at your API and it generates journey-based pytest tests, runs them in CI, and heals them as your API evolves."
+    },
+    "https://checksum.ai/docs/api-testing/upload-specs.md": {
+      "title": "Upload API Specs",
+      "url": "https://checksum.ai/docs/api-testing/upload-specs.md",
+      "page_url": "https://checksum.ai/docs/api-testing/upload-specs",
+      "area": "api-testing",
+      "description": "Upload OpenAPI, HAR, Postman, GraphQL, Protobuf, and other API formats to register your endpoints with Checksum. Files are committed to your tests repo and parsed into the API Coverage map."
+    },
+    "https://checksum.ai/docs/api-testing/generate-tests.md": {
+      "title": "Generate API Tests",
+      "url": "https://checksum.ai/docs/api-testing/generate-tests.md",
+      "page_url": "https://checksum.ai/docs/api-testing/generate-tests",
+      "area": "api-testing",
+      "description": "Run the Checksum agent in Standard or Deep mode to generate API tests from your specs. The agent plans, implements, reviews, and verifies the tests, then opens a PR."
+    },
+    "https://checksum.ai/docs/api-testing/agent-sessions.md": {
+      "title": "Agent Sessions",
+      "url": "https://checksum.ai/docs/api-testing/agent-sessions.md",
+      "page_url": "https://checksum.ai/docs/api-testing/agent-sessions",
+      "area": "api-testing",
+      "description": "An agent session is a unit of work the agent runs: generating a suite, healing a test, or responding to a spec change. Watch sessions live, answer the agent's questions, and track them to completion."
+    },
+    "https://checksum.ai/docs/api-testing/generated-tests.md": {
+      "title": "Generated Tests",
+      "url": "https://checksum.ai/docs/api-testing/generated-tests.md",
+      "page_url": "https://checksum.ai/docs/api-testing/generated-tests",
+      "area": "api-testing",
+      "description": "Every API test is standard Python (pytest) committed to your repo: a named journey, a sequence of API calls, and assertions that verify state across steps. Reusable logic lives in shared utility functions you can read and edit."
+    },
+    "https://checksum.ai/docs/api-testing/view-tests.md": {
+      "title": "View API Tests",
+      "url": "https://checksum.ai/docs/api-testing/view-tests.md",
+      "page_url": "https://checksum.ai/docs/api-testing/view-tests",
+      "area": "api-testing",
+      "description": "Browse generated test suites, cases, and steps on the API Tests page. Each case shows a plain-language journey, payloads, and assertions, or view the code directly."
+    },
+    "https://checksum.ai/docs/api-testing/api-files.md": {
+      "title": "API Files",
+      "url": "https://checksum.ai/docs/api-testing/api-files.md",
+      "page_url": "https://checksum.ai/docs/api-testing/api-files",
+      "area": "api-testing",
+      "description": "Browse and edit the files in your Checksum tests repository directly from the app: inspect generated specs, stories, and test code, make quick edits, and save back to the repo."
+    },
+    "https://checksum.ai/docs/api-testing/environment-variables.md": {
+      "title": "Environment Variables",
+      "url": "https://checksum.ai/docs/api-testing/environment-variables.md",
+      "page_url": "https://checksum.ai/docs/api-testing/environment-variables",
+      "area": "api-testing",
+      "description": "Set the environment variables your API tests need to run. Add them one at a time or import a .env file. Variables are stored centrally and injected into every run."
+    },
+    "https://checksum.ai/docs/api-testing/archive-tests.md": {
+      "title": "Archive Tests",
+      "url": "https://checksum.ai/docs/api-testing/archive-tests.md",
+      "page_url": "https://checksum.ai/docs/api-testing/archive-tests",
+      "area": "api-testing",
+      "description": "Archive test suites that are no longer relevant to exclude them from runs, and bring them back any time by unarchiving."
+    },
+    "https://checksum.ai/docs/api-testing/run-tests.md": {
+      "title": "Run API Tests",
+      "url": "https://checksum.ai/docs/api-testing/run-tests.md",
+      "page_url": "https://checksum.ai/docs/api-testing/run-tests",
+      "area": "api-testing",
+      "description": "Run your whole suite or individual suites, then read the full report on the API Test Runs page, with per-call status codes and timing for every step."
+    },
+    "https://checksum.ai/docs/api-testing/triage.md": {
+      "title": "Triage Bugs",
+      "url": "https://checksum.ai/docs/api-testing/triage.md",
+      "page_url": "https://checksum.ai/docs/api-testing/triage",
+      "area": "api-testing",
+      "description": "Review failed and skipped tests on the API Triage board. Confirm bugs, dismiss false positives, and mark bugs fixed to trigger an automatic healing session."
+    },
+    "https://checksum.ai/docs/api-testing/health-dashboard.md": {
+      "title": "API Health Dashboard",
+      "url": "https://checksum.ai/docs/api-testing/health-dashboard.md",
+      "page_url": "https://checksum.ai/docs/api-testing/health-dashboard",
+      "area": "api-testing",
+      "description": "See your API testing metrics in one place: latest run results, tests awaiting a verdict, active bugs and skips, and a 30-day timeline of daily reports."
+    },
+    "https://checksum.ai/docs/api-testing/ci-integration.md": {
+      "title": "CI Integration",
+      "url": "https://checksum.ai/docs/api-testing/ci-integration.md",
+      "page_url": "https://checksum.ai/docs/api-testing/ci-integration",
+      "area": "api-testing",
+      "description": "Run your API test suites in CI with the Checksum GitHub Action, on every pull request, on a schedule, or on demand, and gate your pipeline on the results."
+    },
+    "https://checksum.ai/docs/api-reference/index.md": {
+      "title": "API Reference",
+      "url": "https://checksum.ai/docs/api-reference/index.md",
+      "page_url": "https://checksum.ai/docs/api-reference",
+      "area": "api-reference",
+      "description": "Checksum exposes a public REST API that lets you trigger test runs, poll for results, manage test health, and initiate auto-healing — all from your own scripts, CI pipelines, or internal tools."
+    }
+  }
+}
